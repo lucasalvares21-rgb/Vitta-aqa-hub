@@ -1,0 +1,12 @@
+{
+  "rewrites": [
+    {
+      "source": "/fit/:path*",
+      "destination": "https://lp-fit.vercel.app/:path*"
+    },
+    {
+      "source": "/simulador/:path*",
+      "destination": "https://simula-vitta-aqa.vercel.app/:path*"
+    }
+  ]
+}
