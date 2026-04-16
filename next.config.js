@@ -1,16 +1,22 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  async redirects() {
+  async rewrites() {
     return [
+      {
+        source: '/fit',
+        destination: 'https://lp-fit.vercel.app/',
+      },
       {
         source: '/fit/:path*',
         destination: 'https://lp-fit.vercel.app/:path*',
-        permanent: false,
+      },
+      {
+        source: '/simulador',
+        destination: 'https://simula-vitta-aqa.vercel.app/',
       },
       {
         source: '/simulador/:path*',
         destination: 'https://simula-vitta-aqa.vercel.app/:path*',
-        permanent: false,
       },
     ]
   },
